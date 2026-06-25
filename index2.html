@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>TATA PIZZA</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/5/w3.css">
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- MENU SUPERIOR -->
+<div class="w3-top w3-hide-small">
+
+  <div class="w3-bar w3-black w3-xlarge w3-opacity w3-hover-opacity-off">
+
+    <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">CARDÁPIO</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
+
+  </div>
+
+</div>
+
+<!-- CAPA -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Aberto das 10h às 00h</span>
+  </div>
+
+  <div class="w3-display-middle w3-center">
+
+    <span class="titulo-desktop">TATA<br>PIZZA</span>
+    <span class="titulo-mobile"><b>TATA<br>PIZZA</b></span>
+
+  </div>
+
+</header>
+
+<!-- CARDÁPIO -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+
+  <div class="w3-content">
+
+    <h1 class="titulo-cardapio">NOSSO CARDÁPIO</h1>
+
+    <!-- BOTÕES -->
+    <div class="botoes-menu">
+
+      <button onclick="mostrarMenu('pizzas')" class="w3-button w3-red w3-round-xxlarge w3-xlarge">
+        🍕 PIZZAS
+      </button>
+
+      <button onclick="mostrarMenu('massas')" class="w3-button w3-red w3-round-xxlarge w3-xlarge">
+        🍝 MASSAS
+      </button>
+
+      <button onclick="mostrarMenu('porcoes')" class="w3-button w3-red w3-round-xxlarge w3-xlarge">
+        🍟 PORÇÕES
+      </button>
+
+    </div>
+
+    <!-- IMAGEM -->
+    <div class="imagem-cardapio">
+
+      <img src="tatapizza.jpg" class="img-menu" alt="Cardápio Tata Pizza">
+
+      <!-- PIZZAS -->
+      <div id="pizzas" class="cardapio-box">
+
+        <h1 class="titulo-box">🍕 PIZZAS</h1>
+
+        <h2>
+          <b>Calabresa</b>
+          <span style="float:right;">R$45,00</span>
+        </h2>
+        <p>Molho de tomate, mussarela, calabresa e cebola</p>
+
+        <hr>
+
+        <h2>
+          <b>Frango com Catupiry</b>
+          <span style="float:right;">R$52,00</span>
+        </h2>
+        <p>Frango desfiado com catupiry</p>
+
+        <hr>
+
+        <h2>
+          <b>Portuguesa</b>
+          <span style="float:right;">R$55,00</span>
+        </h2>
+        <p>Presunto, ovos, ervilha, cebola e mussarela</p>
+
+        <hr>
+
+        <h2>
+          <b>Pizza Doce</b>
+          <span style="float:right;">R$40,00</span>
+        </h2>
+        <p>Chocolate ao leite, morango e leite condensado</p>
+
+      </div>
+
+      <!-- MASSAS -->
+      <div id="massas" class="cardapio-box" style="display:none;">
+        <h1 class="titulo-box">🍝 MASSAS</h1>
+        <p>Lasanha - R$40,00</p>
+        <p>Macarronada - R$35,00</p>
+      </div>
+
+      <!-- PORÇÕES -->
+      <div id="porcoes" class="cardapio-box" style="display:none;">
+        <h1 class="titulo-box">🍟 PORÇÕES</h1>
+        <p>Batata Frita - R$25,00</p>
+        <p>Frango à Passarinho - R$35,00</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SOBRE -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo">SOBRE</h1>
+
+    <p>
+      A TATA PIZZA foi criada pela chef Tata Cardoso após sua viagem para a Itália.
+      Ela decidiu abrir sua própria pizzaria.
+    </p>
+
+    <p><strong>A Chef?</strong> Tata Cardoso</p>
+
+    <h2>Horários de Funcionamento</h2>
+
+    <p>Segunda e Terça: Fechado</p>
+    <p>Quarta a Sexta: 10h às 00h</p>
+    <p>Sábado: 10h às 23h</p>
+    <p>Domingo: Fechado</p>
+
+  </div>
+
+</div>
+
+<!-- CONTATO -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contato">
+
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo">CONTATO</h1>
+
+    <p>Telefone: (16) 99999-8765</p>
+
+    <form>
+
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantidade de pessoas" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required></p>
+
+      <p>
+        <button class="w3-button w3-light-grey w3-block" type="submit">
+          ENVIAR
+        </button>
+      </p>
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+function mostrarMenu(menu) {
+
+  document.getElementById("pizzas").style.display = "none";
+  document.getElementById("massas").style.display = "none";
+  document.getElementById("porcoes").style.display = "none";
+
+  document.getElementById(menu).style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

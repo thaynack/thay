@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Amatic SC", sans-serif;
+  }
+  
+  /* IMAGEM DE FUNDO */
+  
+  .bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("tatapizza.jpg");
+    min-height: 90%;
+  }
+  
+  /* TÍTULOS */
+  
+  .titulo-desktop {
+    font-size: 100px;
+    color: white;
+  }
+  
+  .titulo-mobile {
+    font-size: 60px;
+    color: white;
+    display: none;
+  }
+  
+  .titulo-cardapio {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .titulo-box {
+    font-size: 55px;
+  }
+  
+  /* BOTÕES */
+  
+  .botoes-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* IMAGEM DO CARDÁPIO */
+  
+  .imagem-cardapio {
+    position: relative;
+  }
+  
+  .img-menu {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  /* CAIXA DO CARDÁPIO */
+  
+  .cardapio-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 85%;
+    color: white;
+    background-color: rgba(0,0,0,0.70);
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  /* LINHAS */
+  
+  hr {
+    border-color: rgba(255,255,255,0.3);
+  }
+  
+  /* RESPONSIVO */
+  
+  @media screen and (max-width: 768px) {
+  
+    .titulo-desktop {
+      display: none;
+    }
+  
+    .titulo-mobile {
+      display: block;
+    }
+  
+    .cardapio-box {
+      width: 90%;
+      left: 5%;
+      padding: 15px;
+    }
+  
+  }
